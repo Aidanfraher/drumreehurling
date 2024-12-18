@@ -1,0 +1,152 @@
+
+
+/* Base styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fff; /* Background set to white */
+}
+
+/* Header styling */
+.header {
+    background-color: #b22222; /* Red color */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #8b0000; /* Darker red */
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #b22222; /* Lighter red on hover */
+}
+
+/* Hero section */
+.hero {
+    background: url('hurling-background.jpg') no-repeat center center/cover;
+    color: #fff; /* White text */
+    padding: 4rem;
+    text-align: center;
+}
+
+/* About section */
+.about-section {
+    padding: 2rem;
+    background-color: #f8f8f8; /* Light gray for contrast */
+    text-align: center;
+
+}
+/* Gallery section */
+.location-section {
+
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+
+
+@media (max-width: 768px) {
+    .gallery-section .slides img {
+        width: 100%; /* Makes images responsive */
+        height: auto; /* Height will adjust automatically based on width */
+    }
+@media (max-width: 768px) {
+    .gallery-section .slides img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; /* Ensures images don’t stretch */
+    }
+}
+
+
+
+
+
+}
+
+/* Contact section */
+.contact-section {
+    background-color: #fff; /* White background */
+    padding: 2rem;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    margin-bottom: 0.5rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #b22222; /* Red border */
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #b22222; /* Red background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #8b0000; /* Darker red */
+}
+
+/* Footer */
+.footer {
+    background-color: #8b0000; /* Dark red */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 2rem;
+    }
+}
